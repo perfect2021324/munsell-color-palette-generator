@@ -1,0 +1,122 @@
+.vertical-center {
+    text-align: center;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    /* overflow-y: hidden; */
+    overscroll-behavior: none;
+    touch-action: pan-x pan-y;
+}
+
+.horizontal_panel {
+    float:left;
+    height: 40%;
+}
+
+/* Mother container for all elements */
+#container {
+    margin:   0;
+    padding:  0;
+    height:   93%;
+    width:    100%;
+    display:  block;
+    /* background-color: #aaaaaa; */
+}
+
+/* Button to load files */
+.loadbutton {
+    text-align:center;
+    border-radius: 25px;
+    color:white;
+    background-color:black;
+    padding:5px;
+    padding-left:30px;
+    padding-right:30px;
+    font-size:1.2em;
+    cursor: pointer;
+}
+
+#controls {
+    display:flex;
+    justify-content:space-between;
+    background-color: white;
+    padding: 10px;
+    height: 7%;
+}
+#logo {
+    font-size: 2em;
+    padding-left: 25px;
+    display:flex;
+    justify-content:center;
+    align-content: center;
+}
+
+/* div containing zoom canvas and image canvas */
+#image_container {
+    height: 50%;
+}
+
+#zoom_container, #image_container {
+    float: left;
+}
+#zoom_canvas, #image_canvas,#chip_canvas,#card_canvas {
+    /*border: 1px solid red;*/
+    /*background-color: green;*/
+}
+
+#image_canvas_crosshair {
+    /*m   background-color: green;*/
+}
+#munsell_panel {
+    width:100%;
+    height: 45%;
+    float:left;
+}
+#chip_panel {
+    width: 20%;
+}
+#card_panel {
+    width:80%;
+}
+#palette,
+#complementary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+#palette div,
+#complementary div {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* create a little bit of contrast for the text */
+  mix-blend-mode: difference;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px #333;
+}
+
+#palette div,
+#complementary div {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#count {
+    width: 50px;
+    text-align: center;
+    font-size: large;
+    border-radius: 10px;
+}
